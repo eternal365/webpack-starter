@@ -1,0 +1,89 @@
+$color-dark: #212121;
+$color-light: #ffffff;
+$color-light-gray: #eeeeee;
+$color-gray: #989898;
+$color-primary: #6750a4;
+$color-primary-hover: #21005e;
+$color-primary-active: #eaddff;
+
+* {
+  font: inherit;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $color-light-gray;
+  font-family: Consolas, monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: #212121;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1em;
+}
+
+.container {
+  width: 100%;
+  max-width: 30em;
+  background: $color-light;
+  text-align: center;
+  border-radius: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3em;
+  box-shadow: 5px 10px 20px rgba($color-dark, 0.1);
+}
+
+.image {
+  width: 100%;
+  max-width: 5em;
+  height: auto;
+}
+
+.title {
+  font-size: 2em;
+  line-height: 1em;
+  color: $color-gray;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.text {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.button {
+  background: $color-primary;
+  color: $color-light;
+  border-radius: 1em;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-primary-hover;
+    color: $color-light;
+  }
+
+  &:active {
+    background-color: $color-primary-active;
+    color: $color-primary;
+  }
+}
